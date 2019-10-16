@@ -11,6 +11,7 @@ public class Main{
       c1.inputCustomer();
       c1.addProduct(p1);
       c1.Totalmoney();
+      c1.deleteProduct(p1);
 
   }
 }

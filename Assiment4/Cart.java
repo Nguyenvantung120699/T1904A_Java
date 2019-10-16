@@ -55,11 +55,12 @@ public class Cart{
 
   public void addProduct(Product p1){
      this.productsList.add(p1);
-     System.out.println("add productsList complete !");
+     System.out.println("add product complete !");
   }
 
    public void deleteProduct(Product p1){
      this.productsList.remove(p1);
+     System.out.println("delete product complete !");
   }
 
   // Totalmoney
@@ -68,11 +69,11 @@ public class Cart{
     for(Product p1: this.productsList){
       GrandTotal = p1.Price;
        if(City.matches("Ha Noi")==true && City.matches("HCM")==true){
-            GrandTotal = GrandTotal*0.1;
+            GrandTotal = GrandTotal*1.01;
             System.out.println("GrandTotal : "+ " " + this.GrandTotal);
         }
         else{
-          GrandTotal = GrandTotal*0.2;
+          GrandTotal = GrandTotal*1.02;
            System.out.println("GrandTotal : "+ " " + this.GrandTotal);
     }
     }
