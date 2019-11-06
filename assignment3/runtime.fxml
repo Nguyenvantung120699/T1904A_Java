@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="assignment3.Timer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="258.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Run">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ipmin" layoutX="181.0" layoutY="120.0" prefHeight="39.0" prefWidth="157.0" promptText="minutes">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn" onAction="#startTime" layoutX="362.0" layoutY="120.0" mnemonicParsing="false" text="Start">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text fx:id="opmin" layoutX="195.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+         <font>
+            <Font size="76.0" />
+         </font>
+      </Text>
+      <Text layoutX="293.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+         <font>
+            <Font size="76.0" />
+         </font>
+      </Text>
+      <Text fx:id="opsec" layoutX="324.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+         <font>
+            <Font size="76.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
