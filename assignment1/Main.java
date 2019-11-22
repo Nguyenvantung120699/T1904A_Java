@@ -1,24 +1,32 @@
 package assignment1;
 
-import java.util.Scanner;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class Main{
+import java.io.IOException;
+
+public class Main extends Application {
+    public static Stage mainStage; 
     public static void main(String[] args) {
-        int n;
-        System.out.println("nhap vao so n : ");
-        Scanner sc = new Scanner(System.in);
-        n=sc.nextInt();
-        for(int i=2;i<n;i++){
-            if(checkSNT(i)){
-                System.out.println(i+"la so nguyen to");
-            }
+        launch(args);
+    }
+
+    @Override
+    public void start (Stage primaryStage) throws IOException {
+        mainStage = primaryStage;
+        try{
+            Parent root = FXMLLoader.load(getClass().getResource("tbProduct.fxml"));
+            primaryStage.setTitle("Products List");
+            primaryStage.setScene(new Scene(root, 600, 400));
+            primaryStage.show();
+        }catch(Exception e){
+            
         }
     }
 
-    public static boolean checkSNT(int n){
-        for (int i=2;i<=n/2;i++){
-            if(n%i==0) return false;
-        }
-        return true;
-    }
+
+
 }
