@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jv2_lab9_2.Controller">
+   <children>
+      <Text fx:id="title" layoutX="253.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtName" layoutX="171.0" layoutY="88.0" prefHeight="25.0" prefWidth="269.0" promptText="User name" />
+      <TextField fx:id="txtEmail" layoutX="172.0" layoutY="134.0" prefHeight="25.0" prefWidth="269.0" promptText="Email" />
+      <TextField fx:id="txtPass" layoutX="171.0" layoutY="181.0" prefHeight="25.0" prefWidth="269.0" promptText="Password" />
+      <TextField fx:id="txtConPass" layoutX="172.0" layoutY="227.0" prefHeight="25.0" prefWidth="269.0" promptText="confim password" />
+      <Button fx:id="btSm" layoutX="262.0" layoutY="292.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Submit" />
+      <RadioButton fx:id="rbEN" layoutX="28.0" layoutY="26.0" mnemonicParsing="false" onAction="#langEN" text="EN" />
+      <RadioButton fx:id="rbVN" layoutX="28.0" layoutY="55.0" mnemonicParsing="false" onAction="#langVN" text="VN" />
+      <RadioButton fx:id="rbJP" layoutX="28.0" layoutY="85.0" mnemonicParsing="false" onAction="#langJP" text="JP" />
+   </children>
+</Pane>
